@@ -8,3 +8,8 @@ clarify_prompts = [
 
 def generate_response():
     return random.choice(clarify_prompts)
+
+def find_something_from(user_input):
+    word_list = user_input.split()
+    something_index = word_list.index("something")
+    print  word_list[something_index + 1:]
